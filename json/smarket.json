@@ -1,0 +1,21 @@
+[{
+  "title":"[멕시카나] 닭강정 2종",
+  "price":"7,990원",
+  "url":"main3_product1.jpg",
+  "cart":"cart_white.svg"
+}, {
+  "title":"[우주인피자] 허니 고르곤졸라",
+  "price":"11,900원",
+  "url":"main3_product2.jpeg",
+  "cart":"cart_white.svg"
+}, {
+  "title":"[프로마제 다피우나] 크리스피 브리바이트",
+  "price":"10,000원",
+  "url":"main3_product3.jpg",
+  "cart":"cart_white.svg"
+}, {
+  "title":"[느린마을] 간편전 7종",
+  "price":"6,555원",
+  "url":"main3_product4.jpg",
+  "cart":"cart_white.svg"
+}]

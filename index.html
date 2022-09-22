@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>마켓컬리 :: 내일의 장보기, 마켓컬리</title>
+  <link rel="icon" href="img_1/icon_114.png" type="img_1/icon_114.png">
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/common.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/first_product_json.js"></script>
+  <script src="js/second_product_json.js"></script>
+  <script src="js/third_product_json.js"></script>
+  <script src="js/timer_json.js"></script>
+</head>
+<body>
+  <header>
+    <div class="user_menu">
+      <a href="#" class="header_delivery"><img src="img_1/delivery_210801.webp" alt="header_delivery"></a>
+      <ul class="login">
+        <li><span><a href="#">회원가입</a></span></li>
+        <li>|</li>
+        <li><a href="#">로그인</a></li>
+        <li>|</li>
+        <li class="dropdown_login"><a href="#">고객센터<img src="img_1/ico_down_8x5.png" alt="down_button"></a>
+          <ul class="customer_center">
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">자주하는 질문</a></li>
+            <li><a href="#">1:1문의</a></li>
+            <li><a href="#">대량주문 문의</a></li>
+            <li><a href="#">상품 제안</a></li>
+            <li><a href="#">에코포장 피드백</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <a href="index.html"><img src="img_1/ico_logo.png" alt="icon" class="logo"></a>
+
+    <nav>
+      <ul class="nav_product">
+        <li class="nav_category"><a href="sub.html"><img src="img_1/icon_hamburger.png" alt="hamburger">전체 카테고리</a>
+          <ul class="sub_category">
+            <li><a href="sub.html"><img src="img_2/header_sub1_o.webp" alt="header_imo">채소</a>
+              <ul class="sub_child">
+                <li><a href="sub.html">친환경</a></li>
+                <li><a href="sub.html">고구마·감자·당근</a></li>
+                <li><a href="sub.html">시금치·쌈채소·나물</a></li>
+                <li><a href="sub.html">브로콜리·파프리카·양배추</a></li>
+                <li><a href="sub.html">양파·대파·마늘·배추</a></li>
+                <li><a href="sub.html">오이·호박·고추</a></li>
+                <li><a href="sub.html">냉동·이색·간편채소</a></li>
+                <li><a href="sub.html">콩나물·버섯</a></li>
+              </ul>
+            </li>
+            <li><a href="sub.html"><img src="img_2/header_sub2_o.webp" alt="header_imo">과일·견과·씰</a>
+              <ul class="sub_child">
+                <li><a href="sub.html">친환경</a></li>
+                <li><a href="sub.html">제철과일</a></li>
+                <li><a href="sub.html">국산과일</a></li>
+                <li><a href="sub.html">수입과일</a></li>
+                <li><a href="sub.html">간편과일</a></li>
+                <li><a href="sub.html">냉동·건과일</a></li>
+                <li><a href="sub.html">견과류</a></li>
+                <li><a href="sub.html">쌀·잡곡</a></li>
+              </ul>
+            </li>
+            <li><a href="sub.html"><img src="img_2/header_sub3_o.webp" alt="header_imo">수산·해산·건어물</a>
+              <ul class="sub_child">
+                <li><a href="sub.html">제철수산</a></li>
+                <li><a href="sub.html">생선류</a></li>
+                <li><a href="sub.html">굴비·반건류</a></li>
+                <li><a href="sub.html">오징어·낙지·문어</a></li>
+                <li><a href="sub.html">새우·게·랍스터</a></li>
+                <li><a href="sub.html">해산물·조개류</a></li>
+                <li><a href="sub.html">수산가공품</a></li>
+                <li><a href="sub.html">김·미역·해조류</a></li>
+                <li><a href="sub.html">건어물·다시팩</a></li>
+              </ul>
+            </li>
+            <li><a href="sub.html"><img src="img_2/header_sub4_o.webp" alt="header_imo">정육·계란</a>
+              <ul class="sub_child">
+                <li><a href="sub.html">국내산 소고기</a></li>
+                <li><a href="sub.html">수입산 소고기</a></li>
+                <li><a href="sub.html">돼지고기</a></li>
+                <li><a href="sub.html">계란류</a></li>
+                <li><a href="sub.html">닭·오리고기</a></li>
+                <li><a href="sub.html">양념육·돈까스</a></li>
+                <li><a href="sub.html">양고기</a></li>
+              </ul>
+            </li>
+            <li><a href="sub.html"><img src="img_2/header_sub5_o.webp" alt="header_imo">국·반찬·메인요리</a>
+              <ul class="sub_child">
+                <li><a href="sub.html">국·탕·찌개</a></li>
+                <li><a href="sub.html">밀키트·메인요리</a></li>
+                <li><a href="sub.html">밑반찬</a></li>
+                <li><a href="sub.html">김치·젓갈·장류</a></li>
+                <li><a href="sub.html">두부·어묵·부침개</a></li>
+                <li><a href="sub.html">베이컨·햄·통조림</a></li>
+              </ul>
+            </li>
+            <li><a href="sub.html"><img src="img_2/header_sub6_o.webp" alt="header_imo">샐러드·간편식</a>
+              <ul class="sub_child">
+                <li><a href="sub.html">샐러드·닭가슴살</a></li>
+                <li><a href="sub.html">도시락·밥류</a></li>
+                <li><a href="sub.html">파스타·면류</a></li>
+                <li><a href="sub.html">떡볶이·튀김·순대</a></li>
+                <li><a href="sub.html">피자·핫도그·만두</a></li>
+                <li><a href="sub.html">폭립·떡갈비·안주</a></li>
+                <li><a href="sub.html">죽·스프·카레</a></li>
+                <li><a href="sub.html">선식·시리얼</a></li>
+              </ul>
+            </li>
+            <li><a href="sub.html"><img src="img_2/header_sub7_o.webp" alt="header_imo">면·양념·오일</a>
+              <ul class="sub_child">
+                <li><a href="sub.html">파스타·면류</a></li>
+                <li><a href="sub.html">식초·소스·드레싱</a></li>
+                <li><a href="sub.html">양념·액젓·장류</a></li>
+                <li><a href="sub.html">식용유·참기름·오일</a></li>
+                <li><a href="sub.html">소금·설탕·향신료</a></li>
+                <li><a href="sub.html">밀가루·가루·믹스</a></li>
+              </ul>
+            </li>
+            <li><a href="sub.html"><img src="img_2/header_sub8_o.webp" alt="header_imo">생수·음료·우유·커피</a>
+              <ul class="sub_child">
+                <li><a href="sub.html">생수·탄산수</a></li>
+                <li><a href="sub.html">음료·주스</a></li>
+                <li><a href="sub.html">우유·두유·요거트</a></li>
+                <li><a href="sub.html">커피</a></li>
+                <li><a href="sub.html">차</a></li>
+              </ul>
+            </li>
+            <li><a href="sub.html"><img src="img_2/header_sub9_o.webp" alt="header_imo">간식·과자·떡</a>
+              <ul class="sub_child">
+                <li><a href="sub.html">과자·스낵·쿠키</a></li>
+                <li><a href="sub.html">초콜릿·젤리·캔디</a></li>
+                <li><a href="sub.html">떡·한과</a></li>
+                <li><a href="sub.html">아이스크림</a></li>
+              </ul>
+            </li>
+            <li><a href="sub.html"><img src="img_2/header_sub10_o.webp" alt="header_imo">베이커리·치즈·델리</a>
+              <ul class="sub_child">
+                <li><a href="sub.html">식빵·빵류</a></li>
+                <li><a href="sub.html">잼·버터·스프레드</a></li>
+                <li><a href="sub.html">케이크·파이·디저트</a></li>
+                <li><a href="sub.html">치즈</a></li>
+                <li><a href="sub.html">델리</a></li>
+                <li><a href="sub.html">올리브·피클</a></li>
+              </ul>
+            </li>
+            <li><a href="sub.html"><img src="img_2/header_sub11_o.webp" alt="header_imo">건강식품</a>
+              <ul class="sub_child">
+                <li><a href="sub.html">영양제</a></li>
+                <li><a href="sub.html">유산균</a></li>
+                <li><a href="sub.html">홍삼·인삼·꿀</a></li>
+                <li><a href="sub.html">건강즙·건강음료</a></li>
+                <li><a href="sub.html">건강분말·건강환</a></li>
+                <li><a href="sub.html">다이어트·이너뷰티</a></li>
+                <li><a href="sub.html">유아동</a></li>
+              </ul>
+            </li>
+            <li><a href="sub.html"><img src="img_2/header_sub12_o.webp" alt="header_imo">와인</a>
+              <ul class="sub_child">
+                <li><a href="sub.html">레드와인</a></li>
+                <li><a href="sub.html">화이트와인</a></li>
+                <li><a href="sub.html">샴페인·스파클링</a></li>
+              </ul>
+            </li>
+            <li><a href="sub.html"><img src="img_2/header_sub13_o.webp" alt="header_imo">전통주</a>
+              <ul class="sub_child">
+                <li><a href="sub.html">막걸리·약주</a></li>
+                <li><a href="sub.html">증류수·과실주</a></li>
+              </ul>
+            </li>
+            <li><a href="sub.html"><img src="img_2/header_sub14_o.webp" alt="header_imo">생활용품·리빙·캠핑</a>
+              <ul class="sub_child">
+                <li><a href="sub.html">휴지·티슈</a></li>
+                <li><a href="sub.html">여성·위생용품</a></li>
+                <li><a href="sub.html">세제·청소용품</a></li>
+                <li><a href="sub.html">화훼·인테어소품</a></li>
+                <li><a href="sub.html">의약외품·마스크</a></li>
+                <li><a href="sub.html">생활잡화·문구</a></li>
+                <li><a href="sub.html">캠핑용품</a></li>
+              </ul>
+            </li>
+            <li><a href="sub.html"><img src="img_2/header_sub15_o.webp" alt="header_imo">스킨케어·메이크업</a>
+              <ul class="sub_child">
+                <li><a href="sub.html">스킨·미스트·패드</a></li>
+                <li><a href="sub.html">에센스·앰플·로션</a></li>
+                <li><a href="sub.html">크림·오일</a></li>
+                <li><a href="sub.html">클렌징</a></li>
+                <li><a href="sub.html">마스크팩</a></li>
+                <li><a href="sub.html">선케어</a></li>
+                <li><a href="sub.html">메이크업</a></li>
+                <li><a href="sub.html">맨즈케어</a></li>
+                <li><a href="sub.html">뷰티용품·기기</a></li>
+              </ul>
+            </li>
+            <li><a href="sub.html"><img src="img_2/header_sub16_o.webp" alt="header_imo">헤어·바디·구강</a>
+              <ul class="sub_child">
+                <li><a href="sub.html">구강·면도</a></li>
+                <li><a href="sub.html">샴푸·컨디셔너</a></li>
+                <li><a href="sub.html">트리트먼트·팩</a></li>
+                <li><a href="sub.html">헤어에센스·염모</a></li>
+                <li><a href="sub.html">바디워시·스크럽</a></li>
+                <li><a href="sub.html">바디로션·크림</a></li>
+                <li><a href="sub.html">핸드·립·데오</a></li>
+                <li><a href="sub.html">향수·디퓨저</a></li>
+                <li><a href="sub.html">헤어·바디소품</a></li>
+              </ul>
+            </li>
+            <li><a href="sub.html"><img src="img_2/header_sub17_o.webp" alt="header_imo">주방용품</a>
+              <ul class="sub_child">
+                <li><a href="sub.html">주방소모품·잡화</a></li>
+                <li><a href="sub.html">주방·조리도구</a></li>
+                <li><a href="sub.html">냄비·팬·솥</a></li>
+                <li><a href="sub.html">보관용기·텀블러</a></li>
+                <li><a href="sub.html">식기·테이블웨어</a></li>
+                <li><a href="sub.html">컵·잔·커피도구</a></li>
+              </ul>
+            </li>
+            <li><a href="sub.html"><img src="img_2/header_sub18_o.webp" alt="header_imo">가전제품</a>
+              <ul class="sub_child">
+                <li><a href="sub.html">주방가전</a></li>
+                <li><a href="sub.html">생활가전</a></li>
+                <li><a href="sub.html">계절가전</a></li>
+                <li><a href="sub.html">디지털·PC</a></li>
+                <li><a href="sub.html">대형·설치가전</a></li>
+              </ul>
+            </li>
+            <li><a href="sub.html"><img src="img_2/header_sub19_o.webp" alt="header_imo">반려동물</a>
+              <ul class="sub_child">
+                <li><a href="sub.html">강아지 간식</a></li>
+                <li><a href="sub.html">강아지 주식</a></li>
+                <li><a href="sub.html">고양이 간식</a></li>
+                <li><a href="sub.html">고양이 주식</a></li>
+                <li><a href="sub.html">건강관리</a></li>
+                <li><a href="sub.html">배변·위생</a></li>
+                <li><a href="sub.html">장난감</a></li>
+                <li><a href="sub.html">미용·외출·하우스 등</a></li>
+              </ul>
+            </li>
+            <li><a href="sub.html"><img src="img_2/header_sub20_o.webp" alt="header_imo">베이비·키즈·완구</a>
+              <ul class="sub_child">
+                <li><a href="sub.html">분유·간편 이유식</a></li>
+                <li><a href="sub.html">이유식 재료</a></li>
+                <li><a href="sub.html">간식·음식·음료</a></li>
+                <li><a href="sub.html">건강식품</a></li>
+                <li><a href="sub.html">이유·수유용품</a></li>
+                <li><a href="sub.html">기저귀·물티슈</a></li>
+                <li><a href="sub.html">세제·위생용품</a></li>
+                <li><a href="sub.html">스킨·구강케어</a></li>
+                <li><a href="sub.html">완구·잡화류</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="new_menu"><a href="sub.html">신상품</a></li>
+        <li class="nav_menu"><a href="sub.html">베스트</a></li>
+        <li class="new_menu"><a href="sub.html">알뜰쇼핑</a></li>
+        <li class="nav_menu"><a href="sub.html">특가/혜택</a></li>
+      </ul>
+      <form>
+        <input type="text" placeholder="검색어를입력해주세요." class="btn_text">
+        <input type="image" src="img_1/icon_search.png" class="btn_search" alt="img">
+      </form>
+      <div class="nav_icon">
+        <a href="#"><img src="img_1/icon_delivery_setting.svg" alt="delivery_icon"></a>
+      </div>
+      <div class="nav_icon">
+        <a href="#"><img src="img_1/btn-heart-off.svg" alt="heart_icon"></a>
+      </div>
+      <div class="nav_icon">
+        <a href="#"><img src="img_1/icon_cart.svg" alt="cart_icon"></a>
+      </div>
+    </nav>
+
+
+  </header>
+
+  <div id="slider">
+    <div class="slider_wrap">
+      <ul class="auto_slide">
+        <li><img src="img_1/slider_1.webp" alt="slider"></li>
+        <li><img src="img_1/slider_2.webp" alt="slider"></li>
+        <li><img src="img_1/slider_3.webp" alt="slider"></li>
+        <li><img src="img_1/slider_4.webp" alt="slider"></li>
+        <li><img src="img_1/slider_5.webp" alt="slider"></li>
+        <li><img src="img_1/slider_6.webp" alt="slider"></li>
+        <li><img src="img_1/slider_7.webp" alt="slider"></li>
+        <li><img src="img_1/slider_8.webp" alt="slider"></li>
+      </ul>
+      <span class="prev"><img src="img_1/arrow_banner_left_52_52.svg" alt="prev button"></span>
+      <span class="next"><img src="img_1/arrow_banner_right_52_52.svg" alt="next button"></span>
+    </div>
+  </div>
+
+  <main>
+    <section>
+      <div class="timer_product">
+        <div id="timer_wrap">
+          <div class="timer_watch">
+            <img src="img_1/tit_just_1day_v2.png" alt="timer alram">
+            <h2>~70% <span>SALE</span></h2>
+            <h4 id="timer"> </h4>
+          </div>
+          <div class="timer_box">
+            <div class="timer_img"></div>
+            <div class="get_time"></div>
+          </div>
+          <div class="timer_box">
+            <div class="timer_img"></div>
+            <div class="get_time"></div>
+          </div>
+          <div class="timer_box">
+            <div class="timer_img"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main_slider">
+        <img src="img_1/main_slider1.webp" alt="main slider">
+      </div>
+
+      <article>
+        <h3 id="first_title"></h3>
+        <div class="first_product">
+          <div class="img_wrap_first"></div>
+        </div>
+        <div class="first_product">
+          <div class="img_wrap_first"></div>
+        </div>
+        <div class="first_product">
+          <div class="img_wrap_first"></div>
+        </div>
+        <div class="first_product">
+          <div class="img_wrap_first"></div>
+        </div>
+      </article>
+
+      <article>
+        <h3 id="second_title"></h3>
+        <div class="second_product">
+          <div class="sproduct_box">
+            <div class="sproduct_img"></div>
+          </div>
+          <div class="sproduct_box">
+            <div class="sproduct_img"></div>
+          </div>
+          <div class="sproduct_box">
+            <div class="sproduct_img"></div>
+          </div>
+          <div class="sproduct_box">
+            <div class="sproduct_img"></div>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <h3 id="title"></h3>
+        <div class="product">
+          <div class="img_wrap"></div>
+        </div>
+        <div class="product">
+          <div class="img_wrap"></div>
+        </div>
+        <div class="product">
+          <div class="img_wrap"></div>
+        </div>
+        <div class="product">
+          <div class="img_wrap"></div>
+        </div>
+        <div class="product">
+          <div class="img_wrap"></div>
+        </div>
+        <div class="product">
+          <div class="img_wrap"></div>
+        </div>
+        <div class="product">
+          <div class="img_wrap"></div>
+        </div>
+        <div class="product">
+          <div class="img_wrap"></div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <div class="main1_slider">
+    <a href="sub.html"><img src=img_1/main_slider2.webp alt="img_slider"></a>
+  </div>
+
+  <article>
+    <h3 id="recipe_title"> </h3>
+    <div class="recipe_box">
+      <div class="recipe_img"></div>
+    </div>
+    <div class="recipe_box">
+      <div class="recipe_img"></div>
+    </div>
+    <div class="recipe_box">
+      <div class="recipe_img"></div>
+    </div>
+  </article>
+
+  <footer>
+    <div class="footer_first">
+      <div class="footer_center">
+        <h3>고객행복센터</h3>
+        <div class="center_number">
+          <h1>1644-1107</h1>
+          <dl>
+            <dt>365고객센터</dt>
+            <dd>오전7시 - 오후7시</dd>
+          </dl>
+        </div>
+
+        <div class="kakao_inqury">
+          <button>카카오톡 문의</button>
+          <dl>
+            <dt>365고객센터</dt>
+            <dd>오전7시 - 오후7시</dd>
+          </dl>
+        </div>
+        <div class="direct_inqury">
+          <button>1:1 문의</button>
+          <dl>
+            <dt>24시간 접수 가능</dt>
+            <dd>고객센터 운영시간에 순차적으로 답변해드리겠습니다.</dd>
+          </dl>
+        </div>
+        <div class="direct_bulkorder">
+          <button>대량주문 문의</button>
+          <dl>
+            <dt class="bulk_dt">비회원의 경우 메일로 문의 바랍니다.</dt>
+            <dd> </dd>
+          </dl>
+
+        </div>
+      </div>
+
+      <div class="footer_introduce">
+        <ul class="footer_nav">
+          <li><a href="#">컬리소개</a></li>
+          <li><a href="#">컬리소개영상</a></li>
+          <li><a href="#">인재채용</a></li>
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">이용안내</a></li>
+        </ul>
+
+        <div class="clear"></div>
+
+        <div class="corporation_introduce">
+          <ul>
+            <li>법인명 (상호) : 주식회사 컬리 | 사업자등록번호 : 261-81-23567 <span>사업자정보 확인</span></li>
+            <li>통신판매업 : 제 2018-서울강남-01646호 | 개인정보보호책임자 : 이원준</li>
+            <li>주소 : 서울특별시 강남구 테헤란로 133,18층(역삼동) | 대표이사 : 김슬아</li>
+            <li>입점문의 : <span>입점문의하기</span> | 마케팅제휴 : <span>business@kurlycorp.com</span></li>
+            <li>채용문의 : <span>recruit@kurlycorp.com</span></li>
+            <li>팩스:070 - 7500 -6098 | 이메일 : <span>help@kurlycorp.com</span></li>
+            <li>대량주문 문의 : <span>kurlygift@kurlycorp.com</span></li>
+          </ul>
+        </div>
+
+        <div class="footer_icon">
+          <ul>
+            <li><a href="#"><img src="img_1/ico_instagram.webp" alt="instagram"></a></li>
+            <li><a href="#"><img src="img_1/ico_fb.webp" alt="facebook"></a></li>
+            <li><a href="#"><img src="img_1/ico_blog.webp" alt="naver_blog"></a></li>
+            <li><a href="#"><img src="img_1/ico_naverpost.webp" alt="naver_post"></a></li>
+            <li><a href="#"><img src="img_1/ico_youtube.webp" alt="youtube"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer_certification">
+        <div class="certification_box">
+          <a href="#"><img src="img_1/isms_220310.webp" alt="cer_img"></a>
+          <p><a href="#">[인증범위]마켓컬리 쇼핑몰 서비스 개발.운영</a>
+            <a href="#">(심사받지 않은 물리적 인프라 제외)</a>
+            <a href="#">[유효기간]2022.01.19 ~ 2025.01.18</a>
+          </p>
+        </div>
+        <div class="certification_box">
+          <a href="#"><img src="img_1/logo_eprivacyplus.webp" alt="cer_img"></a>
+          <p><a href="#">개인정보보호 우수 웹사이트</a>
+            <a href="#">개인정보처리시스템 인증(ePRIVACY PLUSE)</a>
+          </p>
+        </div>
+        <div class="certification_box">
+          <a href="#" class="payments"><img src="img_1/logo_payments.webp" alt="cer_img"></a>
+          <p><a href="#">고객님의 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한
+              토스 페이먼츠 구매안전(에스크로) 서비스를 이용하실 수 있습니다.</a></p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer_wrap">
+      <div class="footer_last">
+        <p>마켓컬리에서 판매되는 상품 중에는 마켓컬리에 입점한 개별 판매자가 판매하는 마켓플레이스(오픈마켓)상품이 포함되어있습니다.<br>
+          마켓플레이(오픈마켓) 상품의 경우 컬리는 통신판매중개자로서 통신판매의 당사자가 아닙니다. 컬리는 해당 상품의 주문, 품질, 교환/환불 등 의무와 책임을 부담하지 않습니다.<br>
+          <span>@ KURLY.CORP.ALL.RIGHTS RESERVED</span>
+        </p>
+      </div>
+    </div>
+
+  </footer>
+  <script src="js/products_javascript.js"></script>
+  <script src="js/timedeal_javascript.js"></script>
+  <script src="js/slider.js"></script>
+</body>
+
+</html>

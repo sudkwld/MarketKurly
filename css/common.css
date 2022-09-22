@@ -1,0 +1,443 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+}
+
+html {
+  color: #333;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+input,
+select,
+textarea,
+button {
+  font-family: noto sans, malgun gothic, AppleGothic, dotum;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-size: 12px;
+}
+
+.clear {
+  clear: both;
+}
+
+/*header*/
+header {
+  width: 1050px;
+  height: auto;
+  margin: 0 auto;
+}
+
+/*header 상단*/
+.user_menu {
+  width: 1050px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_delivery img {
+  width: 121px;
+  height: 22px;
+  padding: 10px;
+}
+
+.login li {
+  float: left;
+  padding: 10px 8px;
+  color: #d8d8d8;
+}
+
+.login img {
+  padding: 0 5px;
+}
+
+.login span a {
+  color: #701A8D;
+}
+
+.customer_center {
+  display: none;
+}
+
+.dropdown_login {
+  position: relative;
+}
+
+.dropdown_login:hover .customer_center {
+  display: block;
+}
+
+.customer_center {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  z-index: 2;
+  border: 1px solid #d8d8d8;
+  background-color: #fff;
+}
+
+.customer_center li {
+  margin: 0;
+  padding: 0 0 5px 5px;
+  width: 100px;
+}
+
+/*header logo*/
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -20px;
+  width: 103px;
+  height: 79px;
+}
+
+/*nav*/
+nav {
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+form {
+  position: relative;
+  height: 54px;
+  display: flex;
+  align-items: center;
+}
+
+.btn_text {
+  border: #F7F7F7;
+  background-color: #F7F7F7;
+  width: 180px;
+  height: 36px;
+  padding: 0 60px 0 14px;
+  border-radius: 18px;
+  font-family: 'Noto Sans';
+  font-weight: 400;
+  font-size: 12px;
+  color: #666;
+  line-height: 16px;
+  outline: none;
+
+}
+
+.btn_search {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+/*header nav li*/
+.nav_product {
+  float: left;
+  height: 54px;
+  display: flex;
+}
+
+.nav_product li {
+  float: left;
+  padding: 16px 0 0;
+  text-align: center;
+
+}
+
+.nav_product li a {
+  font-weight: 700;
+  font-size: 16px;
+  font-family: 'Noto Sans';
+  letter-spacing: -0.3px;
+  color: #333;
+}
+
+.nav_menu {
+  width: 110px;
+}
+
+.nav_category {
+  width: 148px;
+  position: relative;
+}
+
+.nav_category img {
+  padding: 0 10px 0 0;
+}
+
+.new_menu {
+  width: 124px;
+}
+
+.new_menu a:hover,
+.nav_menu a:hover {
+  text-decoration: underline #701A8D;
+  color: #701A8D;
+}
+
+/*header hamburger*/
+.sub_category {
+  position: absolute;
+  top: 50px;
+  width: 180px;
+  display: none;
+  z-index: 3;
+}
+
+
+.sub_category>li {
+  background-color: rgb(255, 255, 255);
+  width: 200px;
+  height: 30px;
+  padding: 12px;
+  text-align: left;
+  position: relative;
+}
+
+.sub_category li a {
+  font-size: 13px;
+}
+
+.sub_category img {
+  width: 20px;
+}
+
+.sub_category li:hover {
+  background-color: #edebeb;
+}
+
+.sub_category > li:hover > a {
+  color: #701A8D;
+}
+
+.sub_child li a:hover {
+  color: #701A8D;
+  text-decoration: underline #701A8D;
+}
+
+.sub_child {
+  position: absolute;
+  top: 0;
+  left: 224px;
+  z-index: 3;
+  display: none;
+}
+
+.sub_child li {
+  width: 200px;
+  padding: 12px;
+  background-color: #edebeb;
+}
+
+/*nav icon*/
+.nav_icon {
+  float: right;
+  width: 36px;
+  height: 36px;
+  margin-left: 10px;
+  padding: 0 5px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/*footer*/
+footer {
+  width: 100%;
+  border-top: 1px solid rgb(240, 240, 240);
+}
+
+.footer_first {
+  width: 1050px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  padding-top: 25px;
+}
+
+/*footer 고객센터 연결창*/
+.footer_center {
+  width: 534px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.footer_center h1 {
+  width: 150px;
+  font-size: 28px;
+}
+
+.footer_center button {
+  border: 1px solid rgb(219, 218, 218);
+  background-color: #fff;
+  width: 150px;
+  padding: 11px;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.footer_center dt {
+  padding-left: 12px;
+  font-size: 13px;
+  color: #888;
+}
+
+.footer_center dt:first-child:not(:only-child) {
+  font-size: 14px;
+  font-weight: bold;
+  padding-bottom: 5px;
+  color: #333;
+}
+
+.center_number,
+.kakao_inqury,
+.direct_inqury,
+.direct_bulkorder {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer_first dl {
+  margin-left: 15px;
+}
+
+.footer_first dt {
+  padding: 0;
+}
+
+.footer_first dd {
+  font-size: 13px;
+  color: #888;
+}
+
+/*footer nav market-kurly-introduce*/
+.footer_introduce {
+  width: 476px;
+}
+
+.footer_nav li {
+  float: left;
+  padding-right: 10px;
+  padding-bottom: 30px;
+  letter-spacing: -0.5px;
+}
+
+.footer_nav li a {
+  font-size: 13px;
+}
+
+/*사업자명*/
+.corporation_introduce {
+  width: 100%;
+  color: #888;
+  line-height: 20px;
+  font-size: 12px;
+  letter-spacing: -0.5px;
+  padding-bottom: 10px;
+}
+
+.corporation_introduce span {
+  color: #701A8D;
+  letter-spacing: normal;
+  font-weight: 550;
+  font-size: 11px;
+}
+
+/*footer sns icon*/
+.footer_icon {
+  float: left;
+  padding-top: 30px;
+}
+
+.footer_icon li {
+  float: left;
+  margin-right: 7px;
+}
+
+.footer_icon img {
+  width: 30px;
+}
+
+/*footer 인증란*/
+.footer_certification {
+  width: 100%;
+  display: flex;
+  padding: 20px 10px;
+  justify-content: space-between;
+  border-top: 1px solid rgb(240, 240, 240);
+  ;
+}
+
+.footer_certification img {
+  width: 34px;
+}
+
+.payments img {
+  width: 102px;
+}
+
+.certification_box {
+  display: flex;
+  align-items: center;
+}
+
+.certification_box p {
+  display: flex;
+  flex-flow: column wrap;
+  padding-left: 20px;
+  width: 220px;
+}
+
+.certification_box a {
+  color: #999;
+  font-size: 9px;
+}
+
+/*footer_last 100% wrap*/
+.footer_wrap {
+  width: 100%;
+  background-color: #f7f7f7;
+  ;
+}
+
+/*footer all rights reserved*/
+.footer_last {
+  width: 1050px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 10px;
+  color: #999;
+  letter-spacing: -1px;
+  font-weight: 600;
+  line-height: 16px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footer_last span {
+  letter-spacing: normal;
+  line-height: 30px;
+  font-size: 10px;
+}
